@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Css/index.css">
+    <title>Document</title>
+</head> 
+<body>
+    <div class="houseContainer">
+        
+        <div class="houseContainer_result">
+            <div class="text">
+                <h1>Titanic Survival</h1> 
+            </div>  
+         <form class="Form">       
+             <h1>Titanic Survival</h1>
+             <div class="formInput">
+                 <div class="formInputContainer_radio">
+                     <h2>Passenger Class</h2>
+                    <div class="radio">
+                        <div class="formInput_radio">
+                            <input type="radio" name="pass" id="pass">
+                            <label for="pass">1</label>
+                         </div>
+                         <div class="formInput_radio">
+                            <input type="radio" name="pass" id="pass">
+                            <label for="pass">2</label>
+                         </div>
+                         <div class="formInput_radio">
+                            <input type="radio" name="pass" id="pass">
+                            <label for="pass">3</label>
+                         </div>
+                    </div>
+                 </div>
+
+                <div class="formInput_container">
+                    <p>Siblings/Spouse</p>
+                   <input type="number" placeholder="Enter number of siblings/spouse" min="1">
+                </div>
+                
+                <div class="formInput_container">
+                    <p>Fare</p>
+                   <input type="number" placeholder="Enter your fare" min="1">
+                </div>
+
+                <div class="formInput_container">
+                    <p>Parents/Children</p>
+                   <input type="number" placeholder="Enter number of parents/children" min="1">
+                </div>
+                 
+                 <!-- <div class="formInput_container">
+                    <div class="siblings"><p>Siblings/Spouse</p><input type="number" placeholder="Enter Siblings/Spouse" min="1"></div>
+                    <div class="siblings"><p>Parents/Children</p><input type="number" placeholder="Enter Parents/Children" min="1"></div>
+                </div> -->
+                 <div class="formInput_container">
+                    <p>Age</p>
+                   <input type="number" placeholder="Enter age in years" min="1">
+                </div>
+               <div class="gender">
+                   <h2>Gender</h2>
+                   <div class="gender_box">
+                    <div class="genderContainer">
+                        <input type="radio" name="gender" id="gender">
+                        <label for="gender">Male</label>
+                    </div>
+                    <div class="genderContainer">
+                     <input type="radio" name="gender" id="gender">
+                     <label for="gender">Female</label>
+                 </div>
+                   </div>
+               </div>
+               <div class="formInputContainer_radio">
+                <h2>Embarked</h2>
+               <div class="radio">
+                   <div class="formInput_radio">
+                       <input type="radio" name="pass" id="pass">
+                       <label for="pass">S</label>
+                    </div>
+                    <div class="formInput_radio">
+                       <input type="radio" name="pass" id="pass">
+                       <label for="pass">C</label>
+                    </div>
+                    <div class="formInput_radio">
+                       <input type="radio" name="pass" id="pass">
+                       <label for="pass">Q</label>
+                    </div>
+               </div>
+            </div>
+                 <button type="button">Submit</button>
+             </div>
+
+             <div class="formInput_container" style="color:#FFFFFF">
+                 <h3> Prediction: {{ output }} </h3>
+             </div>>
+             
+       </form>
+        </div>
+        
+     </div>
+</body>
+</html>
